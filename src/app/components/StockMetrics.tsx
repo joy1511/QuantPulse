@@ -14,7 +14,7 @@ export function StockMetrics({ currentPrice, change, changePercent, volume, mark
 
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <Card className="p-4 bg-zinc-900 border-zinc-800">
+      <Card className="p-4">
         <div className="flex items-center gap-2 mb-2">
           <DollarSign className="size-4 text-zinc-400" />
           <p className="text-sm text-zinc-400">Current Price</p>
@@ -26,7 +26,7 @@ export function StockMetrics({ currentPrice, change, changePercent, volume, mark
         </div>
       </Card>
 
-      <Card className="p-4 bg-zinc-900 border-zinc-800">
+      <Card className="p-4">
         <div className="flex items-center gap-2 mb-2">
           <Activity className="size-4 text-zinc-400" />
           <p className="text-sm text-zinc-400">Day Change</p>
@@ -39,7 +39,7 @@ export function StockMetrics({ currentPrice, change, changePercent, volume, mark
         </p>
       </Card>
 
-      <Card className="p-4 bg-zinc-900 border-zinc-800">
+      <Card className="p-4">
         <div className="flex items-center gap-2 mb-2">
           <Activity className="size-4 text-zinc-400" />
           <p className="text-sm text-zinc-400">Volume</p>
@@ -48,7 +48,7 @@ export function StockMetrics({ currentPrice, change, changePercent, volume, mark
         <p className="text-sm text-zinc-500 mt-1">shares traded</p>
       </Card>
 
-      <Card className="p-4 bg-zinc-900 border-zinc-800">
+      <Card className="p-4">
         <div className="flex items-center gap-2 mb-2">
           <DollarSign className="size-4 text-zinc-400" />
           <p className="text-sm text-zinc-400">Market Cap</p>

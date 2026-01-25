@@ -17,7 +17,7 @@ const generateStockData = (ticker: string) => {
 
   const data = [];
   let price = basePrice;
-  
+
   for (let i = 0; i < 24; i++) {
     const change = (Math.random() - 0.5) * 40;
     price = price + change;
@@ -108,7 +108,7 @@ export function DashboardPage() {
   };
 
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-100 p-6">
+    <div className="min-h-screen text-zinc-100 p-6">
       <div className="max-w-7xl mx-auto space-y-6">
         {/* Header */}
         <div className="mb-8">
@@ -120,7 +120,7 @@ export function DashboardPage() {
         <StockInput onSearch={handleSearch} />
 
         {/* Current Stock Info */}
-        <div className="border-l-4 border-blue-600 bg-zinc-900/50 p-4 rounded-r-lg">
+        <div className="border-l-4 border-[#3A6FF8] bg-[rgba(15,23,42,0.5)] backdrop-blur-sm p-4 rounded-r-lg">
           <p className="text-sm text-zinc-400">Currently Viewing</p>
           <p className="text-2xl text-zinc-100">{selectedStock}</p>
         </div>
@@ -152,7 +152,7 @@ export function DashboardPage() {
         </div>
 
         {/* Footer */}
-        <div className="mt-8 pt-6 border-t border-zinc-800">
+        <div className="mt-8 pt-6 border-t border-[rgba(100,150,255,0.1)]">
           <p className="text-center text-sm text-zinc-500">
             Market data is simulated for demonstration purposes. Last updated: {new Date().toLocaleTimeString('en-IN')}
           </p>

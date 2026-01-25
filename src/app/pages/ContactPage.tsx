@@ -49,13 +49,13 @@ export function ContactPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-100 p-6">
+    <div className="min-h-screen text-zinc-100 p-6">
       <div className="max-w-6xl mx-auto space-y-8">
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl mb-4 text-zinc-100">Get in Touch</h1>
           <p className="text-lg text-zinc-400 max-w-2xl mx-auto">
-            Have questions about QuantPulse India? We're here to help. 
+            Have questions about QuantPulse India? We're here to help.
             Reach out to our team and we'll get back to you as soon as possible.
           </p>
         </div>
@@ -65,9 +65,9 @@ export function ContactPage() {
           {contactInfo.map((info, index) => {
             const Icon = info.icon;
             return (
-              <Card key={index} className="p-6 bg-zinc-900 border-zinc-800 text-center">
-                <div className="inline-flex p-3 rounded-lg bg-blue-600/10 mb-4">
-                  <Icon className="size-6 text-blue-500" />
+              <Card key={index} className="p-6 text-center">
+                <div className="inline-flex p-3 rounded-lg bg-[rgba(58,111,248,0.1)] mb-4">
+                  <Icon className="size-6 text-[#5B8DFF]" />
                 </div>
                 <h3 className="text-lg text-zinc-100 mb-2">{info.label}</h3>
                 <p className="text-zinc-300 mb-1">{info.value}</p>
@@ -80,9 +80,9 @@ export function ContactPage() {
         {/* Main Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Contact Form */}
-          <Card className="lg:col-span-2 p-8 bg-zinc-900 border-zinc-800">
+          <Card className="lg:col-span-2 p-8">
             <div className="flex items-center gap-2 mb-6">
-              <MessageSquare className="size-6 text-blue-500" />
+              <MessageSquare className="size-6 text-[#5B8DFF]" />
               <h2 className="text-2xl text-zinc-100">Send Us a Message</h2>
             </div>
 
@@ -156,21 +156,21 @@ export function ContactPage() {
 
           {/* Company Info Sidebar */}
           <div className="space-y-6">
-            <Card className="p-6 bg-zinc-900 border-zinc-800">
+            <Card className="p-6">
               <h3 className="text-lg text-zinc-100 mb-4">About QuantPulse India</h3>
               <p className="text-sm text-zinc-400 leading-relaxed mb-4">
-                We're a team of data scientists, financial analysts, and engineers 
+                We're a team of data scientists, financial analysts, and engineers
                 dedicated to democratizing AI-powered stock market analysis for Indian traders.
               </p>
               <p className="text-sm text-zinc-400 leading-relaxed">
-                Our mission is to make sophisticated market intelligence accessible to everyone, 
+                Our mission is to make sophisticated market intelligence accessible to everyone,
                 helping traders make informed decisions with confidence.
               </p>
             </Card>
 
-            <Card className="p-6 bg-zinc-900 border-zinc-800">
+            <Card className="p-6">
               <div className="flex items-center gap-2 mb-4">
-                <Clock className="size-5 text-blue-500" />
+                <Clock className="size-5 text-[#5B8DFF]" />
                 <h3 className="text-lg text-zinc-100">Business Hours</h3>
               </div>
               <div className="space-y-2 text-sm">
@@ -190,12 +190,12 @@ export function ContactPage() {
               <p className="text-xs text-zinc-500 mt-4">All times in IST (India Standard Time)</p>
             </Card>
 
-            <Card className="p-6 bg-gradient-to-br from-blue-600 to-blue-800 border-0">
+            <Card className="p-6 bg-[rgba(30,58,138,0.35)] backdrop-blur-lg border border-[rgba(100,150,255,0.2)]">
               <h3 className="text-lg text-white mb-2">Need Immediate Help?</h3>
-              <p className="text-sm text-blue-100 mb-4">
+              <p className="text-sm text-zinc-300 mb-4">
                 Check out our FAQ section or browse our knowledge base for quick answers.
               </p>
-              <Button className="w-full bg-white hover:bg-blue-50 text-blue-600">
+              <Button className="w-full">
                 Visit Help Center
               </Button>
             </Card>
@@ -203,9 +203,9 @@ export function ContactPage() {
         </div>
 
         {/* Footer Note */}
-        <div className="pt-6 border-t border-zinc-800">
+        <div className="pt-6 border-t border-[rgba(100,150,255,0.1)]">
           <p className="text-center text-sm text-zinc-500">
-            We typically respond to inquiries within 24 business hours. 
+            We typically respond to inquiries within 24 business hours.
             For urgent matters, please call us directly.
           </p>
         </div>

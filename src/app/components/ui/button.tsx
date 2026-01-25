@@ -9,16 +9,17 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "bg-[#3A6FF8] text-white hover:bg-[#4A7AE8] shadow-sm shadow-blue-500/20",
         destructive:
           "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         outline:
-          "border bg-background text-foreground hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
+          "border border-[rgba(100,150,255,0.25)] bg-transparent text-zinc-200 hover:bg-[rgba(58,111,248,0.15)] hover:border-[rgba(100,150,255,0.4)]",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+          "bg-[rgba(15,23,42,0.6)] text-zinc-200 border border-[rgba(100,150,255,0.12)] hover:bg-[rgba(15,23,42,0.8)]",
         ghost:
-          "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
-        link: "text-primary underline-offset-4 hover:underline",
+          "hover:bg-[rgba(58,111,248,0.1)] hover:text-zinc-100",
+        link: "text-[#5B8DFF] underline-offset-4 hover:underline",
+        fintech: "bg-transparent border border-[#3A6FF8]/40 text-[#5B8DFF] hover:bg-[#3A6FF8]/10 hover:border-[#3A6FF8]/60",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

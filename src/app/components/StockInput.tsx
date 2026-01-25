@@ -29,10 +29,10 @@ export function StockInput({ onSearch }: StockInputProps) {
             placeholder="Enter NSE stock ticker (e.g., RELIANCE, TCS)"
             value={ticker}
             onChange={(e) => setTicker(e.target.value)}
-            className="pl-10 bg-zinc-900 border-zinc-800 text-zinc-100 placeholder:text-zinc-500"
+            className="pl-10"
           />
         </div>
-        <Button type="submit" className="bg-blue-600 hover:bg-blue-700">
+        <Button type="submit">
           <TrendingUp className="size-4 mr-2" />
           Analyze
         </Button>
@@ -47,7 +47,7 @@ export function StockInput({ onSearch }: StockInputProps) {
               setTicker(stock);
               onSearch(stock);
             }}
-            className="px-3 py-1 text-sm rounded-md bg-zinc-800 hover:bg-zinc-700 text-zinc-300 transition-colors"
+            className="px-3 py-1 text-sm rounded-md bg-[rgba(15,23,42,0.6)] hover:bg-[rgba(58,111,248,0.15)] border border-[rgba(100,150,255,0.12)] text-zinc-300 transition-colors backdrop-blur-sm"
           >
             {stock}
           </button>

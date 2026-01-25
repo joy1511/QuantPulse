@@ -47,7 +47,7 @@ export function StatisticsPage() {
   const COLORS = ['#3b82f6', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899', '#06b6d4', '#71717a'];
 
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-100 p-6">
+    <div className="min-h-screen text-zinc-100 p-6">
       <div className="max-w-7xl mx-auto space-y-6">
         {/* Header */}
         <div className="mb-8">
@@ -60,10 +60,10 @@ export function StatisticsPage() {
           {marketOverview.map((item, index) => {
             const Icon = item.icon;
             return (
-              <Card key={index} className="p-6 bg-zinc-900 border-zinc-800">
+              <Card key={index} className="p-6">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 rounded-lg bg-blue-600/10">
-                    <Icon className="size-5 text-blue-500" />
+                  <div className="p-2 rounded-lg bg-[rgba(58,111,248,0.1)]">
+                    <Icon className="size-5 text-[#5B8DFF]" />
                   </div>
                   <p className="text-sm text-zinc-400">{item.label}</p>
                 </div>
@@ -80,7 +80,7 @@ export function StatisticsPage() {
         {/* Charts Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Prediction Accuracy Trend */}
-          <Card className="p-6 bg-zinc-900 border-zinc-800">
+          <Card className="p-6">
             <h3 className="text-lg mb-4 text-zinc-100">Prediction Accuracy Trend</h3>
             <ResponsiveContainer width="100%" height={250}>
               <LineChart data={predictionAccuracy}>
@@ -100,7 +100,7 @@ export function StatisticsPage() {
           </Card>
 
           {/* Sector Performance */}
-          <Card className="p-6 bg-zinc-900 border-zinc-800">
+          <Card className="p-6">
             <h3 className="text-lg mb-4 text-zinc-100">Sector Distribution</h3>
             <ResponsiveContainer width="100%" height={250}>
               <PieChart>
@@ -130,7 +130,7 @@ export function StatisticsPage() {
           </Card>
 
           {/* Top Gainers */}
-          <Card className="p-6 bg-zinc-900 border-zinc-800">
+          <Card className="p-6">
             <h3 className="text-lg mb-4 text-zinc-100 flex items-center gap-2">
               <TrendingUp className="size-5 text-emerald-500" />
               Top Gainers
@@ -154,7 +154,7 @@ export function StatisticsPage() {
           </Card>
 
           {/* Top Losers */}
-          <Card className="p-6 bg-zinc-900 border-zinc-800">
+          <Card className="p-6">
             <h3 className="text-lg mb-4 text-zinc-100 flex items-center gap-2">
               <TrendingDown className="size-5 text-red-500" />
               Top Losers
@@ -179,10 +179,10 @@ export function StatisticsPage() {
         </div>
 
         {/* Performance Summary */}
-        <Card className="p-6 bg-zinc-900 border-zinc-800">
+        <Card className="p-6">
           <h3 className="text-lg mb-4 text-zinc-100">Platform Performance Summary</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="border-l-4 border-blue-600 pl-4">
+            <div className="border-l-4 border-[#3A6FF8] pl-4">
               <p className="text-sm text-zinc-400 mb-1">Overall Accuracy</p>
               <p className="text-2xl text-zinc-100">85.2%</p>
               <p className="text-xs text-zinc-500 mt-1">Last 30 days</p>
@@ -201,7 +201,7 @@ export function StatisticsPage() {
         </Card>
 
         {/* Footer */}
-        <div className="pt-6 border-t border-zinc-800">
+        <div className="pt-6 border-t border-[rgba(100,150,255,0.1)]">
           <p className="text-center text-sm text-zinc-500">
             Statistics updated in real-time. Data shown is simulated for demonstration.
           </p>

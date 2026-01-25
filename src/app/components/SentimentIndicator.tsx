@@ -39,7 +39,7 @@ export function SentimentIndicator({ sentiment }: SentimentIndicatorProps) {
   const Icon = config.icon;
 
   return (
-    <Card className={`p-6 bg-zinc-900 border-zinc-800 ${config.borderColor}`}>
+    <Card className={`p-6 ${config.borderColor}`}>
       <div className="flex items-center gap-3">
         <div className={`p-3 rounded-lg ${config.bgColor}`}>
           <Icon className={`size-6 ${config.color}`} />

@@ -39,6 +39,14 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  
+  /* Fintech refined colors */
+  --fintech-blue: #3A6FF8;
+  --fintech-blue-light: #5B8DFF;
+  --fintech-blue-muted: #4A7AE8;
+  --glass-bg: rgba(15, 23, 42, 0.55);
+  --glass-border: rgba(100, 150, 255, 0.12);
+  --glass-border-light: rgba(148, 180, 255, 0.15);
 }
 
 .dark {
