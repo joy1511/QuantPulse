@@ -5,7 +5,7 @@
  * All API calls are made to the local backend server running on port 8000.
  */
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
 
 // =============================================================================
 // Types

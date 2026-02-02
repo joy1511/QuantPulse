@@ -17,14 +17,6 @@ Or simply:
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # later we restrict this
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
 
 # Import configuration
 from app.config import (
@@ -62,7 +54,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=ALLOWED_ORIGINS,  # List of allowed frontend origins
+    allow_origins=["*"],  # List of allowed frontend origins
     allow_credentials=True,          # Allow cookies and auth headers
     allow_methods=["*"],             # Allow all HTTP methods (GET, POST, etc.)
     allow_headers=["*"],             # Allow all headers
