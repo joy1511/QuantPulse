@@ -74,3 +74,5 @@ Edit `app/config.py` to modify:
 - [ ] AI predictions API (`/api/predictions`)
 - [ ] Database integration
 - [ ] Authentication
+
+<!-- Railway deployment optimized for Python 3.11.9 -->
