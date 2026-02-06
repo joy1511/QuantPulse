@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "id": "RELIANCE",
+      "group": 3,
+      "risk_score": 0.3854,
+      "market_cap": "Large"
+    },
+    {
+      "id": "TCS",
+      "group": 2,
+      "risk_score": 0.3758,
+      "market_cap": "Large"
+    },
+    {
+      "id": "HDFCBANK",
+      "group": 1,
+      "risk_score": 0.395,
+      "market_cap": "Large"
+    },
+    {
+      "id": "INFY",
+      "group": 2,
+      "risk_score": 0.3919,
+      "market_cap": "Large"
+    },
+    {
+      "id": "ICICIBANK",
+      "group": 1,
+      "risk_score": 0.4201,
+      "market_cap": "Large"
+    },
+    {
+      "id": "BHARTIARTL",
+      "group": 4,
+      "risk_score": 0.3805,
+      "market_cap": "Large"
+    },
+    {
+      "id": "ITC",
+      "group": 5,
+      "risk_score": 0.4223,
+      "market_cap": "Large"
+    },
+    {
+      "id": "SBIN",
+      "group": 1,
+      "risk_score": 0.3951,
+      "market_cap": "Large"
+    },
+    {
+      "id": "LT",
+      "group": 3,
+      "risk_score": 0.3859,
+      "market_cap": "Large"
+    },
+    {
+      "id": "HCLTECH",
+      "group": 2,
+      "risk_score": 0.3929,
+      "market_cap": "Large"
+    }
+  ],
+  "links": [],
+  "insights": {
+    "domino_prediction": {
+      "trigger": "HDFCBANK",
+      "sentiment": "Bearish",
+      "downstream_impact": []
+    },
+    "clusters": [
+      {
+        "name": "Financial Triad",
+        "members": [
+          "HDFCBANK",
+          "ICICIBANK",
+          "SBIN"
+        ],
+        "risk": "Critical"
+      },
+      {
+        "name": "IT Defensive",
+        "members": [
+          "TCS",
+          "INFY"
+        ],
+        "risk": "Moderate"
+      }
+    ]
+  }
+}

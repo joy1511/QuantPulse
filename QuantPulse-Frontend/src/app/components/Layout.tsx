@@ -7,6 +7,7 @@ export function Layout() {
   const navItems = [
     { path: '/', icon: Home, label: 'Home' },
     { path: '/dashboard', icon: TrendingUp, label: 'Dashboard' },
+    { path: '/risk-map', icon: Users, label: 'Risk Map' },
     { path: '/statistics', icon: BarChart3, label: 'Statistics' },
     { path: '/contact', icon: Mail, label: 'Contact' },
   ];

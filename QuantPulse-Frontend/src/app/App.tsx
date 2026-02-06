@@ -6,6 +6,7 @@ import { StatisticsPage } from '@/app/pages/StatisticsPage';
 import { ContactPage } from '@/app/pages/ContactPage';
 import { SignInPage } from '@/app/pages/SignInPage';
 import { SignUpPage } from '@/app/pages/SignUpPage';
+import { RiskMapPage } from '@/app/pages/RiskMapPage';
 import { FintechBackground } from '@/app/components/FintechBackground';
 import { AuthProvider } from '@/app/context/AuthContext';
 import { ProtectedRoute } from '@/app/components/ProtectedRoute';
@@ -24,6 +25,11 @@ export default function App() {
                 <Route path="dashboard" element={
                   <ProtectedRoute>
                     <DashboardPage />
+                  </ProtectedRoute>
+                } />
+                <Route path="risk-map" element={
+                  <ProtectedRoute>
+                    <RiskMapPage />
                   </ProtectedRoute>
                 } />
                 <Route path="statistics" element={
