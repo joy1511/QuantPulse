@@ -44,6 +44,7 @@ from app.routers import health
 from app.routers import stocks
 from app.routers import news
 from app.routers import predictions
+from app.routers import ensemble
 
 # Setup logging first
 setup_logging()
@@ -90,6 +91,7 @@ app.include_router(health.router)
 app.include_router(stocks.router)
 app.include_router(news.router)
 app.include_router(predictions.router)
+app.include_router(ensemble.router)
 
 # =============================================================================
 # Application Startup
